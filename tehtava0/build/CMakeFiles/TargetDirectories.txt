@@ -1,0 +1,7 @@
+C:/Olio-ohjelmointi kurssi/olio-ohjelmointi/tehtava0/build/CMakeFiles/tehtava0.dir
+C:/Olio-ohjelmointi kurssi/olio-ohjelmointi/tehtava0/build/CMakeFiles/edit_cache.dir
+C:/Olio-ohjelmointi kurssi/olio-ohjelmointi/tehtava0/build/CMakeFiles/rebuild_cache.dir
+C:/Olio-ohjelmointi kurssi/olio-ohjelmointi/tehtava0/build/CMakeFiles/list_install_components.dir
+C:/Olio-ohjelmointi kurssi/olio-ohjelmointi/tehtava0/build/CMakeFiles/install.dir
+C:/Olio-ohjelmointi kurssi/olio-ohjelmointi/tehtava0/build/CMakeFiles/install/local.dir
+C:/Olio-ohjelmointi kurssi/olio-ohjelmointi/tehtava0/build/CMakeFiles/install/strip.dir
