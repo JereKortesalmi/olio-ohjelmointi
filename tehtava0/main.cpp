@@ -1,9 +1,13 @@
 #include <iostream>
-
+#include <ctime>
 using namespace std;
 
 int main()
 {
-    cout << "Hello World!" << endl;
+    srand(time(NULL));
+    int satunnainenluku = rand() % 40;
+    cout << satunnainenluku << endl;
+
+
     return 0;
 }
