@@ -3,31 +3,16 @@
 Katutaso::Katutaso()
 {
     cout<<"Katutaso luotu"<<endl;
-
-
-}
-
-Katutaso::~Katutaso()
-{
-
 }
 
 void Katutaso::maaritaAsunnot()
 {
-    cout<<"Maaritetaan 2kpl katutason asuntoja"<<endl;
-    as1.maarita(as1.asukasMaara,as1.neliot);
-    as2.maarita(as2.asukasMaara, as2.neliot);
-
-
-
+    cout<<"Maaritetaan 2 kpl katutason asuntoja"<<endl;
+    as1.maarita(2,100);
+    as2.maarita(2,100);
 }
 
-double Katutaso::laskeKulutus(double k)
+double Katutaso::laskeKulutus(double hinta)
 {
-    double laskeKulutus1=0;
-    laskeKulutus1=(as1.laskeKulutus(k)+as2.laskeKulutus(k));
-    //cout<<"asunnon kulutus, kun hinta on=1 on "<<laskeKulutus1<<endl;
-    return laskeKulutus1;
+    return as1.laskeKulutus(hinta)+as2.laskeKulutus(hinta);
 }
-
-

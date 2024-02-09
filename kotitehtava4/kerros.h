@@ -1,28 +1,22 @@
 #ifndef KERROS_H
 #define KERROS_H
-
 #include "asunto.h"
+#include <iostream>
+using namespace std;
 
 
-
-
-class Kerros  :public Asunto
+class Kerros
 {
 public:
     Kerros();
-    ~Kerros();
-
-    virtual void maaritaAsunnot();
-
-
+    virtual void maaritaAsunnot(void);
     double laskeKulutus(double);
 
-    Asunto as1;
-    Asunto as2;
-    Asunto as3;
-    Asunto as4;
-
-
+private:
+    asunto as1;
+    asunto as2;
+    asunto as3;
+    asunto as4;
 };
 
 #endif // KERROS_H

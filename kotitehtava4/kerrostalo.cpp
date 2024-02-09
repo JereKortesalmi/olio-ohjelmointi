@@ -2,19 +2,16 @@
 
 Kerrostalo::Kerrostalo()
 {
-    cout<<"kerrostalo luotu"<<endl;
-
+    cout<<"Kerrostalo luotu"<<endl;
+    cout<<"Maaritellaan kerrostalon kaikki asunnot"<<endl;
+    eka.maaritaAsunnot();
+    toka.maaritaAsunnot();
+    kolmas.maaritaAsunnot();
 }
 
-Kerrostalo::~Kerrostalo()
+double Kerrostalo::laskeKulutus(double hinta)
 {
-
-}
-
-double Kerrostalo::laskeKulutus(double k)
-{
-    double laskekulutus3=0;
-   laskekulutus3=(eka.laskeKulutus(k)+toka.laskeKulutus(k)+kolmas.laskeKulutus(k));
-    cout<<"Kerrostalon kulutus = "<<laskekulutus3<<endl;
-    return laskekulutus3;
+    double katutasonKulutus = eka.laskeKulutus(hinta);
+    double kerrostenKulutus = toka.laskeKulutus(hinta) + kolmas.laskeKulutus(hinta);
+    return katutasonKulutus+kerrostenKulutus;
 }

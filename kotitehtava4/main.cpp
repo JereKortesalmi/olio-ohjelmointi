@@ -1,24 +1,15 @@
-#include "Kerros.h"
-#include "asunto.h"
-#include "katutaso.h"
-#include "kerrostalo.h"
 #include <iostream>
+
+#include "asunto.h"
+#include "kerrostalo.h"
 
 using namespace std;
 
 int main()
 {
-    Asunto a;
-    Katutaso k;
-    Kerros ki;
-    Kerrostalo ke;
 
-    k.maaritaAsunnot();
-    ki.maaritaAsunnot();
-    ki.maaritaAsunnot();
-
-   ke.laskeKulutus(1);
-
+    Kerrostalo talo;
+    cout<<"Kerrostalon kulutus, = "<<talo.laskeKulutus(1)<<endl;
 
     return 0;
 }
