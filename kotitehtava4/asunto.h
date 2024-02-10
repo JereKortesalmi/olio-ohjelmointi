@@ -3,14 +3,15 @@
 #include <iostream>
 using namespace std;
 
-class asunto
+class Asunto
 {
 public:
-    asunto();
+    Asunto();
+    ~Asunto();
     void maarita(int,int);
     double laskeKulutus(double);
-    int asukasMaara;
-    int neliot;
+    int asukasMaara=2;
+    int neliot=100;
 };
 
 #endif // ASUNTO_H

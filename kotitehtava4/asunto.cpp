@@ -1,18 +1,24 @@
 #include "asunto.h"
 
-asunto::asunto()
+Asunto::Asunto()
 {
-    cout<<"asunto luotu"<<endl;
+    cout<<"Asunto luotu"<<endl;
+
 }
 
-void asunto::maarita(int a, int n)
+Asunto::~Asunto()
+{
+
+}
+void Asunto::maarita(int a, int n)
 {
     asukasMaara = a;
     neliot = n;
     cout<<"Asunto maaritetty asukkaita= "<<asukasMaara<<" nelioita= "<<neliot<<endl;
 }
 
-double asunto::laskeKulutus(double hinta)
+double Asunto::laskeKulutus(double hinta)
 {
-    return asukasMaara*neliot*hinta;
+    double summa=asukasMaara*neliot*hinta;
+    return summa;
 }

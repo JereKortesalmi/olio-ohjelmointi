@@ -5,18 +5,19 @@
 using namespace std;
 
 
-class Kerros
+class Kerros : public Asunto
 {
 public:
     Kerros();
-    virtual void maaritaAsunnot(void);
+   ~Kerros();
+    virtual void maaritaAsunnot();
     double laskeKulutus(double);
 
 private:
-    asunto as1;
-    asunto as2;
-    asunto as3;
-    asunto as4;
+    Asunto *as1;
+    Asunto *as2;
+    Asunto *as3;
+    Asunto *as4;
 };
 
 #endif // KERROS_H

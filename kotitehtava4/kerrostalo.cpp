@@ -2,16 +2,25 @@
 
 Kerrostalo::Kerrostalo()
 {
+    eka = new Katutaso();
+    toka = new Kerros();
+    kolmas = new Kerros();
     cout<<"Kerrostalo luotu"<<endl;
     cout<<"Maaritellaan kerrostalon kaikki asunnot"<<endl;
-    eka.maaritaAsunnot();
-    toka.maaritaAsunnot();
-    kolmas.maaritaAsunnot();
+
+}
+
+Kerrostalo::~Kerrostalo()
+{
+
+    cout<<"Kerrostalo tuhottu"<<endl;
 }
 
 double Kerrostalo::laskeKulutus(double hinta)
 {
-    double katutasonKulutus = eka.laskeKulutus(hinta);
-    double kerrostenKulutus = toka.laskeKulutus(hinta) + kolmas.laskeKulutus(hinta);
-    return katutasonKulutus+kerrostenKulutus;
+    double summa=0;
+    summa  = eka->laskeKulutus(hinta);
+    summa += toka->laskeKulutus(hinta);
+    summa += kolmas->laskeKulutus(hinta);
+    return summa;
 }

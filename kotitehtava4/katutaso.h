@@ -5,6 +5,7 @@
 using namespace std;
 
 #include "kerros.h"
+#include "asunto.h"
 
 
 
@@ -12,12 +13,13 @@ class Katutaso : public Kerros
 {
 public:
     Katutaso();
-    virtual void maaritaAsunnot(void) override;
+    ~Katutaso();
+    virtual void maaritaAsunnot() override;
     double laskeKulutus(double);
 
 private:
-    asunto as1;
-    asunto as2;
+    Asunto *as1;
+    Asunto *as2;
 };
 
 #endif // KATUTASO_H
